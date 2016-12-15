@@ -1,0 +1,48 @@
+/*
+ * iconfont
+ */
+/* font face */
+@font-face {
+  font-family: 'iconfont';
+  src: url('//at.alicdn.com/t/font_1477184726_8914857.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1477184726_8914857.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1477184726_8914857.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1477184726_8914857.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1477184726_8914857.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+                    
+                    
+                    
+                                                    
+                    
+.iconfont {
+  font-family: "iconfont";
+  font-size: 0.4rem;
+  font-style: normal;
+  color: #fff;
+  position: relative;
+	top: 0.06rem;
+    left: -0.1rem;
+}
+
+.iconfont-search{
+  font-family: "iconfont";
+  font-size:0.32rem;
+  font-style: normal;
+  color: #fff;
+}
+
+.iconfont-my{
+  font-family: "iconfont";
+  font-size: 0.5rem;
+  font-style: normal;
+  color: #fff;
+}
+
+
+.icon-img{
+	font-family: "iconfont";
+	  font-size: 0.6rem;
+	  font-style: normal;
+	  color: #fff;
+}

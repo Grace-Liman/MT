@@ -1,0 +1,536 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+html {
+  font-size: 50px;
+  width: 100%;
+  min-width: 320px;
+}
+body {
+  color: #333;
+  background-color: #f0efed;
+}
+/* 适配ipad以下的机型，主要是iphone6 plus */
+/* 判断横竖屏 */
+/*
+     * landscape    横屏 
+     * portrait     竖屏 
+     */
+@media (orientation: portrait) {
+  .footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+header {
+  height: 1.01rem;
+  width: 100%;
+  color: #fff;
+  background: #06c1ae;
+  border-bottom: 1px solid #21897d;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+.top-left-city {
+  height: 1rem;
+  line-height: 1rem;
+}
+.top-left-city .citya {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  vertical-align: middle;
+  font-size: 0.32rem;
+  padding-right: 0.3rem;
+}
+.top-left-city .citya .cityspan {
+  display: block;
+  width: 100%;
+  margin-left: 0.1rem;
+}
+.search-box {
+  width: 90%;
+  margin-top: 0.2rem;
+}
+.search-box .search-a {
+  text-decoration: none;
+  list-style-type: none;
+  display: block;
+  width: 100%;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 0.24rem;
+}
+.search-box .search-a .icon-span {
+  display: inline-block;
+  line-height: 0.6rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+.search-box .search-a .search-word {
+  color: rgba(255, 255, 255, 0.6);
+}
+.my-box {
+  display: inline-block;
+  float: right;
+  text-align: center;
+}
+.my-box .mya {
+  width: 0.6rem;
+  display: block;
+  text-decoration: none;
+  list-style-type: none;
+  height: 100%;
+  margin: 0 0.15rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.16rem;
+}
+.my-box .mya .my-word {
+  display: block;
+  text-align: center;
+  height: 100%;
+}
+.my-box .mya .my-word .icon-my {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0.08rem;
+}
+section.logoimg {
+  width: 100%;
+  text-align: center;
+  background: #FFFFFF;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.02px solid #DDD8CE;
+  margin-bottom: 0.2rem;
+  display: -webkit-box;
+}
+section.logoimg ul {
+  font-size: 0;
+  width: 100%;
+  text-decoration: none;
+  list-style-type: none;
+  display: block;
+}
+section.logoimg ul li {
+  display: inline-block;
+  width: 20%;
+  margin: 0.1rem 0;
+}
+section.logoimg ul li a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 0.24rem;
+  color: #666;
+}
+section.logoimg ul li a .icon {
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0.2rem auto;
+  line-height: 0.8rem;
+  text-align: center;
+  border-radius: 0.8rem;
+}
+section.logoimg ul li a .food {
+  background: #FD9D21;
+}
+section.logoimg ul li a .movie {
+  background: #FF6767;
+}
+section.logoimg ul li a .hotel {
+  background: #8A90FA;
+}
+section.logoimg ul li a .fun {
+  background: #FED030;
+}
+section.logoimg ul li a .express {
+  background: #FD9D21;
+}
+section.logoimg ul li a .KTV {
+  background: #FED030;
+}
+section.logoimg ul li a .travel {
+  background: #4DC6EE;
+}
+section.logoimg ul li a .beauty {
+  background: #FF80C2;
+}
+section.logoimg ul li a .fasteat {
+  background: #FD9D21;
+}
+section.logoimg ul li a .ticket {
+  background: #599EEC;
+}
+section.logoimg .swiper-pagination {
+  margin: -0.3rem 0;
+}
+section.news {
+  border-top: 0.02rem solid #DDD8CE;
+  border-bottom: 0.02rem solid #DDD8CE;
+  margin-bottom: 0.2rem;
+  background: #FFFFFF;
+  text-align: center;
+  width: 100%;
+  float: left;
+}
+section.news:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+}
+section.news div.news-left {
+  width: 33.33333333%;
+  float: left;
+}
+section.news div.news-left a {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  margin: 0.1rem auto;
+  border-right: 0.02rem solid  #DDD8CE;
+}
+section.news div.news-left a .up-word {
+  display: block;
+  margin: 0 auto;
+  width: 1.7rem;
+  line-height: 0.25rem;
+}
+section.news div.news-left a .up-word strong {
+  font-size: 0.28rem;
+  color: #64AC24;
+}
+section.news div.news-left a .up-word small {
+  font-size: 0.24rem;
+  color: #666666;
+}
+section.news div.news-left .d-img {
+  display: block;
+}
+section.news div.news-left .d-img img {
+  width: 1.76rem;
+}
+section.news div.news-right {
+  float: left;
+  width: 66.66666667%;
+}
+section.news div.news-right ul {
+  font-size: 0;
+  width: 100%;
+  text-decoration: none;
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+section.news div.news-right ul li.news-right {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 0.02rem solid #DDD8CE;
+}
+section.news div.news-right ul li.news-right a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 0.24rem;
+  color: #666;
+}
+section.news div.news-right ul li.news-right a span.img img {
+  height: 1.3rem;
+  display: inline-block;
+}
+section.news div.news-right ul li.news-right a span.right-top {
+  display: inline-block;
+  margin: 0.1rem auto;
+  width: 1.7rem;
+  position: relative;
+  top: -0.2rem;
+  left: 0;
+}
+section.news div.news-right ul li.news-right a span.right-top strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #FF3F0D;
+  font-size: 0.28rem;
+}
+section.news div.news-right ul li.news-right a span.right-top small {
+  font-size: 0.24rem;
+  color: #666666;
+}
+section.news div.news-right ul li.news-right-botl {
+  display: inline-block;
+  width: 50%;
+  margin-top: 0.1rem;
+}
+section.news div.news-right ul li.news-right-botl a {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  margin: 0auto;
+  border-right: 0.02rem solid  #DDD8CE;
+}
+section.news div.news-right ul li.news-right-botl a span.bottom-left {
+  display: block;
+  margin: 0 auto;
+  width: 1.7rem;
+}
+section.news div.news-right ul li.news-right-botl a span.bottom-left strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 0.28rem;
+  color: #F742B4;
+}
+section.news div.news-right ul li.news-right-botl a span.bottom-left small {
+  font-size: 0.24rem;
+  color: #666666;
+}
+section.news div.news-right ul li.news-right-botl a span.img {
+  display: block;
+}
+section.news div.news-right ul li.news-right-botl a span.img img {
+  width: 0.8rem;
+}
+section.news div.news-right ul li.news-right-botr {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  margin-top: 0.1rem;
+}
+section.news div.news-right ul li.news-right-botr a {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  border-right: 0.02rem solid  #DDD8CE;
+  color: white;
+}
+section.news div.news-right ul li.news-right-botr a span.bottom-right {
+  display: block;
+  margin: 0 auto;
+  width: 1.7rem;
+}
+section.news div.news-right ul li.news-right-botr a span.bottom-right strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 0.28rem;
+  color: #FF8601;
+}
+section.news div.news-right ul li.news-right-botr a span.bottom-right small {
+  font-size: 0.24rem;
+  color: #666666;
+}
+section.news div.news-right ul li.news-right-botr a span.bottom-right span.timeset {
+  font-family: "微软雅黑";
+  display: block;
+  margin: 0.2rem 0;
+  font-size: 0.3rem;
+  color: black;
+}
+section.news div.news-right ul li.news-right-botr a span.bottom-right span.timeset .hour,
+section.news div.news-right ul li.news-right-botr a span.bottom-right span.timeset .min,
+section.news div.news-right ul li.news-right-botr a span.bottom-right span.timeset .sec {
+  font-family: "微软雅黑";
+  display: inline-block;
+  background: #4C4C4C;
+  color: white;
+  width: 0.5rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  text-align: center;
+  border-radius: 0.05rem;
+}
+section.youlike {
+  border-top: 0.02rem solid #DDD8CE;
+  border-bottom: 0.02rem solid #DDD8CE;
+  background: #FFFFFF;
+  width: 100%;
+}
+section.youlike p {
+  font-size: 0.32rem;
+  line-height: 0.8rem;
+  color: #333333;
+  margin-left: 0.2rem;
+  border-bottom: 0.02rem solid #DDD8CE;
+}
+section.youlike p:last-child {
+  border-bottom: 0;
+}
+section.youlike li {
+  text-decoration: none;
+  list-style-type: none;
+  margin-left: 0.2rem;
+  height: 100%;
+  border-bottom: 0.02rem solid #DDD8CE;
+}
+section.youlike li a {
+  font-size: 0.3rem;
+  display: flex;
+  margin: 0.2rem;
+  margin-left: 0;
+}
+section.youlike li a div.food-img {
+  padding-right: 0.3rem;
+}
+section.youlike li a div.food-img img {
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.6rem;
+}
+section.youlike li a div.food-right {
+  width: 100%;
+  position: relative;
+  margin-left: 0.3rem;
+}
+section.youlike li a div.food-right .line1 {
+  color: #333333;
+}
+section.youlike li a div.food-right .line2 {
+  font-size: 0.26rem;
+  color: #666666;
+  margin: 0.2rem 0;
+}
+section.youlike li a div.food-right .line3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+section.youlike li a div.food-right .line3 .price {
+  font-size: 0.4rem;
+  font-weight: 600;
+  color: #06C1AE;
+}
+section.youlike li a div.food-right .line3 .rmb {
+  font-size: 0.2rem;
+  color: #06C1AE;
+}
+section.youlike li a div.food-right .line3 .newuser {
+  width: 1.5rem;
+  height: 0.4rem;
+  border: 0.02rem solid #FF9900;
+  border-radius: 0.04rem;
+  padding: 0.03rem;
+  font-size: 0.2rem;
+  color: #FF9900;
+  margin: 0 0.1rem;
+}
+section.youlike li a div.food-right .line3 .sell {
+  font-size: 0.2rem;
+  color: #333;
+  position: absolute;
+  right: 0.2rem;
+  bottom: 0;
+}
+section.youlike div.loading {
+  width: 100%;
+  display: none;
+}
+section.youlike div.loading img {
+  display: block;
+  margin: 0 auto;
+}
+section.youlike a.checkTG {
+  color: #06C1AE;
+  font-size: 0.28rem;
+}
+footer div.bottom div.btn {
+  display: flex;
+  float: left;
+}
+footer div.bottom div.btn div {
+  width: 1.2rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  text-align: center;
+  font-size: 0.32rem;
+  color: #06C1AE;
+  border: 0.02rem solid #06C1AE;
+  margin: 0.4rem 0.1rem;
+  border-radius: 0.05rem;
+}
+footer div.bottom div.city-bottom {
+  display: flex;
+  font-size: 0.32rem;
+  float: right;
+}
+footer div.bottom div.city-bottom div {
+  width: 1.2rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  text-align: center;
+  font-size: 0.32rem;
+  margin: 0.4rem 0.1rem;
+}
+footer div.bottom div.city-bottom div.cityword {
+  color: #333333;
+  margin-right: 0;
+}
+footer div.bottom div.city-bottom div.cityshow {
+  width: 1.8rem;
+  color: #06C1AE;
+  border: 0.02rem solid #06C1AE;
+  border-radius: 0.05rem;
+}
+footer div.bottom ul.footlist {
+  text-decoration: none;
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  font-size: 0.24rem;
+  margin-bottom: 0.5rem;
+}
+footer div.bottom ul.footlist li {
+  width: 20%;
+  text-align: center;
+  border-right: 0.02rem solid #999;
+}
+footer div.bottom ul.footlist li a {
+  color: #06C1AE;
+}
+footer div.bottom ul.footlist li:last-child {
+  border-right: 0;
+}
+footer div.friendship {
+  font-size: 0.24rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+footer div.friendship span {
+  color: #06C1AE;
+}
+footer div.line {
+  font-size: 0.24rem;
+  color: #999;
+  display: flex;
+}
+footer div.line div.left-line {
+  width: 33.33333333%;
+  height: 0.5rem;
+  border-top: 0.02rem solid #999;
+}
+footer div.line div.right-line {
+  width: 33.33333333%;
+  height: 0.5rem;
+  border-top: 0.02rem solid #999;
+}
+footer div.line div.word {
+  width: 33.33333333%;
+  text-align: center;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  margin-top: -0.2rem;
+}
